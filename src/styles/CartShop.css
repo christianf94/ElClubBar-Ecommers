@@ -1,0 +1,8 @@
+.Icon{
+    color:var(--color-segundario);
+    cursor: pointer;
+    font-size:2.5rem;
+    margin: 10px;}
+
+.buttonIcon .Icon:hover{
+    color: var(--color-hover1);}

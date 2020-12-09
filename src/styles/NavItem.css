@@ -1,0 +1,50 @@
+
+li {
+    display: inline-block;
+    line-height: 60px;
+    margin-right: 5px
+}
+
+a {
+    color: var(--color-segundario);
+    font-size: 2.8rem;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+li:hover {
+    transform: scale(1.05);
+    transition: 0s,1s;}
+
+li a:hover {
+    color: var(--color-hover1);}
+/* ------------------------------------------------------------------------------------@MEDIAS-------------------*/
+@media only screen and (max-width:900px){
+    a{
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width:750px){
+    .itemList a{
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width:650px){
+    li {
+        display: flex;
+        flex-direction: column;
+        line-height: 10px;
+        margin-top: 10px;
+        padding:10px;
+    }
+    
+    .itemList a {
+        color: black;
+        font-size: 2rem;
+        padding: 0px;
+        border-radius: 3px;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --color-principal:black ;
+  --color-segundario: white ;
+  --color-terciario: ;
+  --color-text1: ;
+  --color-text2: ;
+  --color-text3: ;
+  --color-hover1:#fca311;
+  --color-hover2: ;
+  --color-hover3: ;
+}
+
+html{
+  font-family: "Teko", sans-serif;
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color:var( --color-principal);
+}
+
+.container{
+  width: 90%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
