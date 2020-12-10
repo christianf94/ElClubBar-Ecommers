@@ -1,0 +1,30 @@
+.container {
+    width: 100%;
+    max-width: 1800px;
+    margin: auto;
+    max-height: 100vh;
+    height: 100%;
+    background-color:rgb(206, 206, 206) ;
+}
+
+.itemContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background: linear-gradient(135deg, rgba(237,237,237,1) 0%, rgba(204,204,204,1) 44%, rgba(224,224,224,1) 100%);
+    padding: 10px;
+}
+
+.divItems{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px; ;
+    border-radius: 10px;
+    justify-content: center;
+    align-items:center;
+}
+.divItems:hover{
+    background-color: rgba(0, 0, 0, 0.089);
+}
+

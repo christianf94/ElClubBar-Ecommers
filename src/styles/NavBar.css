@@ -1,6 +1,7 @@
 /* ---------------------------------------------------------------------------------NAV DIV---------------------*/
 .navBar{
     width: 100%;
+    max-width: 1800px;
     height: 80px;
     display: flex;
 }
@@ -18,19 +19,26 @@
     flex: 30%;
 }
 
-.navBar .rightSide{
-    flex: 70%;
+.navBar .centerSide{
+    flex: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.navBar .rightSide{
+    flex: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 /* ---------------------------------------------------------------------------------LOGO NAV---------------------*/
 .navLogo {
-    font-size: 3rem;
+    font-size: 2.7rem;
     line-height: 20px;
     font-weight: bold;
     text-shadow: 1px 1px;
-    margin-left:10px;}
+    margin-left: 10px;}
 
 .navLogo a{
     color:var(--color-segundario); }
@@ -45,7 +53,7 @@
     color: #b6b6b6;
     transition: 0s,0.5s; }
 /* ---------------------------------------------------------------------------------ITEM NAV---------------------*/
-.navBar .rightSide .links{
+.navBar .centerSide .links{
     display: flex;
     max-height: 80px;
     justify-content: center;
@@ -55,14 +63,11 @@
     display: none;
     
 }
-.navBar .rightSide #hidden{
+.navBar .centerSide #hidden{
     display: flex;
 }
 /* ------------------------------------------------------------------------------------@MEDIAS-------------------*/
 @media only screen and (max-width:650px){
-    .navBar .rightSide {
-        display: flex;
-        justify-content: flex-end;}
 
     .navBar .rightSide .iconMenu{
         display: flex; }
@@ -70,10 +75,13 @@
     .navLogo {
         margin-right: 10px;}
     
-    .navBar .rightSide .links{
+    .navLogo  a{
+        font-size: 1.3rem;}
+
+    .navBar .centerSide .links{
         display: none;}
 
-    .navBar .rightSide #hidden{
+    .navBar .centerSide #hidden{
         position: absolute;
         left: 0px;
         top: 80px;
@@ -81,8 +89,11 @@
         max-height: 290px;
         max-width: auto;
         width: 100%;
-        background-color:gold;
+        background-color:rgba(75, 75, 75, 0.897);
         display:flex;
         flex-direction: column;
-        align-items: center;}
+        align-items: center;
+        border-radius: 0 0 15px 15px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.658);}
 }

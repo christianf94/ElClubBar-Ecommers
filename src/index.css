@@ -25,12 +25,6 @@ html{
   background-color:var( --color-principal);
 }
 
-.container{
-  width: 90%;
-  max-width: 1500px;
-  margin: auto;
-}
-
 a{
   text-decoration: none;
 }
