@@ -1,4 +1,4 @@
-import "../../styles/ItemListContainer.css"
+import "../../styles/ItemCard.css"
 const ItemListContainer= ({src,alt,item,price}) => (
     <div className="cardItem">
         <div className="imageDiv">

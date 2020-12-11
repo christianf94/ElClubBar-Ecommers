@@ -1,6 +1,6 @@
 import React from 'react'
-import "../../styles/Body.css"
-import ItemListContainer from "../global/ItemListContainer"
+import "../../styles/ItemListContainer.css"
+import ItemListContainer from "../global/ItemCard"
 
 function Body() {
     return (
