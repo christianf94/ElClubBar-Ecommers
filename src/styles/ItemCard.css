@@ -1,13 +1,13 @@
 .cardItem{
     display: flex;
     flex-direction: column;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin: 10px 10px 5px 5px;
     text-align: center;
     justify-content: center;
     align-content: center;
     width: 300px;
-    height: 300px;
+    height: 350px;
     border-radius: 10px;
     cursor:pointer;
 }
@@ -29,15 +29,18 @@
 .cardItem .infoDiv{
     background-color: orange;
     width: 300px;
-    height:78px;
+    height:300px;
     border-radius: 0px 0px 10px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    align-items: center;
 }
 
+.cardItem .infoDiv .priceDiv{
+    font-size: 1.9rem;
+    font-weight: bold;
+}
 .cardItem .infoDiv:hover{
     color: rgb(255, 255, 255);
 }
-

@@ -1,5 +1,6 @@
 import "../../styles/ItemCard.css"
-const ItemListContainer= ({src,alt,item,price}) => (
+import ItemCount from "../global/ItemCount"
+const ItemListContainer= ({src,alt,item,price,stocks}) => (
     <div className="cardItem">
         <div className="imageDiv">
             <img src={src} alt={alt} width="300px" height="230px"/>
@@ -11,6 +12,7 @@ const ItemListContainer= ({src,alt,item,price}) => (
             <div className="priceDiv">
                 <p>{price}</p>
             </div>
+            <ItemCount stock={stocks}/>
         </div>
     </div>
 )

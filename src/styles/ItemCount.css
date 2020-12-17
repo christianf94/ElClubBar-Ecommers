@@ -1,0 +1,27 @@
+.containerCount {
+    margin:5px
+}
+
+.containerCount .divCount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.containerCount .divCount input{
+    background-color: grey;
+    font-size: 1.5rem;
+    border-width: 1px;
+    font-weight: bolder;    
+    text-align: center;
+    width: 100px;
+}
+.containerCount .divCount .buttonCount{
+    background-color: var(--color-principal);
+    color: white;
+    border-radius:4px;
+    border-width: 1px;
+    width: 20px;
+    height: 20px;
+}
