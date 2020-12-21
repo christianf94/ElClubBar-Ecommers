@@ -4,7 +4,7 @@ import "../../styles/ItemCount.css"
 function ItemCount({stock}) {
     const [count,setCount] = useState (1);
 
-    const addCount = ([{stock}])  => {
+    const addCount = (stock)  => {
         if(count < stock) {
         setCount(count + 1);}
     }
@@ -21,11 +21,11 @@ function ItemCount({stock}) {
     return (
         <div className="containerCount">
             <div className="divCount">
-                <button className="buttonCount" onClick={() => addCount([{stock}])}>+</button>
+                <button className="buttonCount" onClick={lessCount}  disabled={!count ? "disabled" : null}>-</button>
                 <input id="inputCount" type="number" readOnly value={count}/>
-                <button className="buttonCount" onClick={() => lessCount()} disabled={!count ? "disabled" : null}>-</button>
+                <button className="buttonCount" onClick={() =>  addCount(stock )}>+</button>
             </div>
-            <button className="buttonAddItem" disabled={!count ? "disabled" : null } onClick={() => AddCardItem()}>Agregar al Carrito</button>
+            <button className="buttonAddItem" disabled={!count ? "disabled" : null } onClick={AddCardItem}>Agregar al Carrito</button>
         </div>
     )   
 }

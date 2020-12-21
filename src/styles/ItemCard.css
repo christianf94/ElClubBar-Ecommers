@@ -7,7 +7,7 @@
     justify-content: center;
     align-content: center;
     width: 300px;
-    height: 400px;
+    height: 430px;
     border-radius: 10px;
     cursor:pointer;
 }
@@ -29,7 +29,7 @@
 .cardItem .infoDiv{
     background-color: orange;
     width: 300px;
-    height:350px;
+    height:400px;
     border-radius: 0px 0px 10px 10px;
     display: flex;
     flex-direction: column;
@@ -41,15 +41,15 @@
     display:flex;
     align-items:center;
     justify-content:center;
-    background-color:grey;
+    background-color:rgb(85, 84, 84);
     width:300px;
-    height:60px;
+    height:80px;
     color: var(--color-segundario);
 }
 
 .cardItem .infoDiv .priceDiv{
-    margin: 5px 0px 5px 0px;
-    font-size: 2rem;
+    margin: 10px 0px 5px 0px;
+    font-size: 2.3rem;
     font-weight: bolder;
     letter-spacing:1px;
 }
