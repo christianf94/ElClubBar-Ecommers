@@ -47,7 +47,7 @@
 }
 
 
-.pulseA {
+.pulse {
     margin:20px;
     width: 22px;
     height: 22px;
@@ -66,43 +66,3 @@
     100% {
         box-shadow: 0 0 0 0 rgba(155, 121, 0, 0);}
     }
-
-    .pulseB {
-        margin:20px;
-        width: 22px;
-        height: 22px;
-        border-radius: 50%;
-        background: #ffc800;
-        cursor: pointer;
-        box-shadow: 0 0 0 rgb(226, 155, 0);
-        animation: pulse 1s infinite;
-        }
-        
-        @keyframes pulse {
-        0% {
-            box-shadow: 0 0 0 0 rgba(209, 164, 0, 0.63);}
-        0% {
-            box-shadow: 0 0 0 10px rgba(190, 149, 0, 0.158);}
-        100% {
-            box-shadow: 0 0 0 0 rgba(155, 121, 0, 0);}
-        }
-    
-        .pulseC {
-            margin:20px;
-            width: 22px;
-            height: 22px;
-            border-radius: 50%;
-            background: #ffc800;
-            cursor: pointer;
-            box-shadow: 0 0 0 rgb(226, 155, 0);
-            animation: pulse 1s infinite;
-            }
-            
-            @keyframes pulse {
-            0% {
-                box-shadow: 0 0 0 0 rgba(209, 164, 0, 0.63);}
-            70% {
-                box-shadow: 0 0 0 10px rgba(190, 149, 0, 0.158);}
-            100% {
-                box-shadow: 0 0 0 0 rgba(155, 121, 0, 0);}
-            }

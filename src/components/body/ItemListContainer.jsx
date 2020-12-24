@@ -6,7 +6,7 @@ import productBeer from "../../productBeer.json"
 
 function Body() {
 
-    const [items, setItems] = useState ([])
+    const [item, setItems] = useState ([])
 
 
 
@@ -24,25 +24,25 @@ function Body() {
         <body className="container">
             <section className="itemContainer">
                 {
-                    items.length ? 
+                    item.length ? 
                     <article className="divItems">
                         {
-                            items.map(items => (
+                            item.map(item => (
                                 <ItemCard 
-                                    key={items.id}
-                                    src={items.src} 
-                                    alt={items.alt} 
-                                    item={items.item} 
-                                    price={items.price} 
-                                    stocks={items.stocks}
+                                    key={item.id}
+                                    src={item.src} 
+                                    alt={item.alt} 
+                                    item={item.item} 
+                                    price={item.price} 
+                                    stocks={item.stocks}
                                 /> ))
                         }
                     </article> :
                     <article className="loadScreen">
                         <div className="pulseDiv">
-                            <span class="pulseA"></span>
-                            <span class="pulseB"></span>
-                            <span class="pulseC"></span>
+                            <span className="pulse"></span>
+                            <span className="pulse"></span>
+                            <span className="pulse"></span>
                         </div>
                         <p> Cargando Productos...</p>
                     </article>
