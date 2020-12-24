@@ -5,6 +5,7 @@ function CartWidget() {
     return (
         <div className="divIcon">
         <a href="www.google.com" className="buttonIcon"><FontAwesomeIcon icon={faShoppingCart} className="Icon"/></a>
+        <span> 0 </span>
         </div>
     );
     }

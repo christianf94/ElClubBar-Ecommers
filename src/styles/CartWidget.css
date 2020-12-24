@@ -6,3 +6,21 @@
 
 .buttonIcon .Icon:hover{
     color: var(--color-hover1);}
+
+span{
+    color:var(--color-primario);
+    font-size: 1.5rem;
+    position: relative;
+    top: -18px;
+    right: 39px; 
+    font-weight: bolder;
+    }
+
+    @media only screen and (max-width:650px){
+        span{
+            position: relative;
+            font-size: 1.5rem;
+            top: -18px;
+            left: -39px; 
+            }
+    }

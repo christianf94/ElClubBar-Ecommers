@@ -78,6 +78,18 @@
     .navLogo  a{
         font-size: 1.3rem;}
 
+    .navBar .leftSide{
+        flex: 45%;
+        }
+
+    .navBar .centerSide{
+        flex: 10%;
+        }
+
+    .navBar .rightSide{
+        flex: 45%;
+        }
+
     .navBar .centerSide .links{
         display: none;}
 

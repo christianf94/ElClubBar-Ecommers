@@ -1,7 +1,7 @@
 .cardItem{
     display: flex;
     flex-direction: column;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin: 10px 10px 5px 5px;
     text-align: center;
     justify-content: center;
@@ -10,6 +10,7 @@
     height: 430px;
     border-radius: 10px;
     cursor:pointer;
+    letter-spacing: 1px;
 }
 
 .cardItem:hover{
@@ -41,7 +42,7 @@
     display:flex;
     align-items:center;
     justify-content:center;
-    background-color:rgb(85, 84, 84);
+    background-color:rgb(58, 57, 57);
     width:300px;
     height:80px;
     color: var(--color-segundario);
@@ -54,3 +55,24 @@
     letter-spacing:1px;
 }
 
+@media only screen and (max-width:650px){
+    .cardItem{
+        font-size: 1.8rem;
+        width: 240px;
+        height: 220;
+    }
+
+    .cardItem .infoDiv{
+        width: 240px;
+        height: 220;
+    }  
+
+    .cardItem .infoDiv .titleDiv{
+        width:240px;
+        height: 80px;
+    }
+
+    .cardItem .imageDiv img{
+        width:240px;
+    }
+}  
