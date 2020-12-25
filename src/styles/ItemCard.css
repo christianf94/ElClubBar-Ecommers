@@ -38,6 +38,10 @@
     align-items: center;
 }
 
+.cardItem .infoDiv:hover{
+    background: linear-gradient(to right, rgb(252, 178, 42) 0%, rgb(253, 172, 21) 100%);
+}
+
 .cardItem .infoDiv .titleDiv{
     display:flex;
     align-items:center;

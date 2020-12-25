@@ -6,6 +6,7 @@
     height: 100%;
 }
 
+
 .itemContainer{
     display: flex;
     flex-direction: column;
