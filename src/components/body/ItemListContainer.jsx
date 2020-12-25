@@ -40,9 +40,7 @@ function Body() {
                     </article> :
                     <article className="loadScreen">
                         <div className="pulseDiv">
-                            <span className="pulse"></span>
-                            <span className="pulse"></span>
-                            <span className="pulse"></span>
+                        <div class="loader"></div>
                         </div>
                         <p> Cargando Productos...</p>
                     </article>
