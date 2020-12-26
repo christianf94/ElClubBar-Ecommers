@@ -19,7 +19,7 @@ function Navbar() {
                 <div className="links" id={showLinks ? "hidden" : " "}> 
                     <NavItem text="HOME" url=""/>
                     <NavItem text="BEERS" url=""/>
-                    <NavItem text="GIFTS" url=""/>
+                    <NavItem text="CLOTHES" url=""/>
                     <NavItem text="GEAR" url=""/>
                     <NavItem text="USER" url=""/>
                     <NavItem text="CONTACT" url=""/>

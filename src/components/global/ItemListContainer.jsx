@@ -1,10 +1,10 @@
 import React from 'react'
 import {useState , useEffect} from "react"  
 import "../../styles/ItemListContainer.css"
-import ItemCard from "../global/ItemCard"
+import ItemCard from "./ItemCard"
 import productBeer from "../../productBeer.json"
 
-function Body() {
+function ItemListContainer() {
 
     const [item, setItems] = useState ([])
 
@@ -13,7 +13,7 @@ function Body() {
     const getProducts = new Promise((resolve,reject) => {
         setTimeout(() => {
             resolve(productBeer);
-        }, 2000)
+        }, 2000) 
     })
 
     useEffect(()=> {
@@ -51,5 +51,5 @@ function Body() {
     )
 }
 
-export default Body
+export default ItemListContainer
 

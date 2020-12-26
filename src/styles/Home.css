@@ -1,0 +1,48 @@
+.container{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+
+.container .body{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.container .body .leftSide{
+    display:flex;
+    flex: 50%;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+.container .body .leftSide .sectionA{
+    
+}
+.container .body .leftSide .sectionA .beersSection{
+    width:500px;
+    height:605px;
+    margin-right:5px;
+    border-radius:1%;
+}
+
+.container .body .rightSide{
+    display:flex;
+    flex: 50%;
+    justify-content: center;
+    align-items:center;
+}
+
+.container .body .rightSide .sectionB{
+
+}
+
+.container .body .rightSide .sectionB .clothesSection{
+    border-radius:1%;
+}
+
+.container .body .rightSide .sectionB .gearSection{
+    border-radius:1%;
+}
