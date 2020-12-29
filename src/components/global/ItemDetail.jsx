@@ -4,18 +4,20 @@ import ItemCount from "../global/ItemCount"
 const ItemDetail = ({item}) => {
     return(
         <>
-        <article>
-            <div>
-                <div>
-                    <img src={item.img} alt="Cerveza Minga Pack x6 Mix"></img>
+        <article className="container">
+            <div className="detailDiv"> 
+                <div className="imageDiv">
+                    <img src={item.img} alt={item.alt} className="itemImg"></img>
                 </div>
-                <div>
-                    <h1>{item.nombre}</h1>
-                    <p>{item.detail}</p>
-                    <h5>{item.price}</h5>
+                <div className="infoDiv">
+                    <h1 className="itemName">{item.nombre}</h1>
+                    <p className="itemDetail">{item.detail}</p>
+                    <p className="itemPrice">{item.price}</p>
+                    <div className="itemCount">
+                        <ItemCount stock={item.stocks}/>
+                    </div>
                 </div>
             </div>
-            <ItemCount/>
         </article>
         </>
     )

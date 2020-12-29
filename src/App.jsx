@@ -13,7 +13,8 @@ function App() {
   return (
   <>
     <Navbar />
-    {showSection("HOME")}
+    <Home/>
+    {showSection("BEERS")}
   </>
   )
 }

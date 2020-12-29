@@ -19,14 +19,65 @@
 }
 
 .container .body .leftSide .sectionA{
-    
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
-.container .body .leftSide .sectionA .beersSection{
-    width:500px;
+
+.container .body .leftSide .sectionB{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .body .leftSide .sectionA .imgDiv{
+    position:relative;
+    width:600px;
     height:605px;
-    margin-right:5px;
-    border-radius:1%;
+    margin:0px 0px 0px 5px;
+    border-radius:2%;
+    cursor:pointer;
 }
+
+
+.container .body .leftSide .sectionA .imgDiv .beersSection{
+    display:block;
+    width:100%;
+    height:100%;
+    margin:0px 0px 0px 5px;
+    border-radius:2%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.container .body .leftSide .sectionA .imgDiv .infoDiv{
+    position:absolute;
+    border-radius:2%;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 50, 50, 0.5);
+    color:white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity:0;
+    margin:0px 0px 0px 5px;
+}
+
+.container .body .leftSide .sectionA .imgDiv .infoDiv .titleDiv{
+    font-size:5rem;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.container .body .leftSide .sectionA .imgDiv .infoDiv:hover{
+    opacity: 1;
+}
+
 
 .container .body .rightSide{
     display:flex;
@@ -35,14 +86,256 @@
     align-items:center;
 }
 
-.container .body .rightSide .sectionB{
-
+.container .body .rightSide .sectionB .imgDiv2{
+    position:relative;
+    width:600px;
+    height:300px;
+    margin:0px 5px 0px 5px;
+    border-radius:2%;
+    cursor:pointer;
 }
 
-.container .body .rightSide .sectionB .clothesSection{
-    border-radius:1%;
+.container .body .rightSide .sectionB .imgDiv2 .clothesSection{
+    display:block;
+    width:100%;
+    height:100%;
+    margin:0px 5px 0px 5px;
+    border-radius:2%;
+    transition: 0.5s;
 }
 
-.container .body .rightSide .sectionB .gearSection{
-    border-radius:1%;
+.container .body .rightSide .sectionB .imgDiv2 .infoDiv2{
+    position:absolute;
+    border-radius:2%;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 50, 50, 0.5);
+    color:white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity:0;
+    margin:0px 5px 0px 5px;
 }
+
+.container .body .rightSide .sectionB .imgDiv2 .titleDiv2{
+    font-size:5rem;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.container .body .rightSide .sectionB .imgDiv2 .infoDiv2:hover{
+    opacity: 1;
+}
+
+.container .body .rightSide .sectionB .imgDiv3{
+    position:relative;
+    width:600px;
+    height:300px;
+    margin:5px 5px 5px 5px;
+    border-radius:2%;
+    cursor:pointer;
+}
+
+.container .body .rightSide .sectionB .imgDiv3 .gearSection{
+    display:block;
+    width:100%;
+    height:100%;
+    margin:5px 5px 5px 5px;
+    border-radius:2%;
+    transition: 0.5s;
+}
+
+.container .body .rightSide .sectionB .imgDiv3 .infoDiv3{
+    position:absolute;
+    border-radius:2%;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 50, 50, 0.5);
+    color:white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity:0;
+    margin:0px 5px 0px 5px;
+}
+
+.container .body .rightSide .sectionB .imgDiv3 .titleDiv3{
+    font-size:5rem;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.container .body .rightSide .sectionB .imgDiv3 .infoDiv3:hover{
+    opacity: 1;
+}
+
+.container .body .leftSide .sectionA .imgDiv .titleDiv:hover{
+    border-bottom: solid 4px orange;
+}
+
+.container .body .rightSide .sectionB .imgDiv2 .titleDiv2:hover{
+    border-bottom: solid 4px orange;
+}
+
+.container .body .rightSide .sectionB .imgDiv3 .titleDiv3:hover{
+    border-bottom: solid 4px orange;
+}
+
+@media only screen and (max-width:1230px){
+    .container .body .leftSide .sectionA .imgDiv{
+        width: 500px;
+    } 
+
+    .container .body .rightSide .sectionB .imgDiv2{
+        width: 500px;
+    }
+
+    .container .body .rightSide .sectionB .imgDiv3{
+        width: 500px;
+    }
+}
+
+
+@media only screen and (max-width:990px){
+    .container .body .leftSide .sectionA .imgDiv{
+        width: 400px;
+    } 
+
+    .container .body .rightSide .sectionB .imgDiv2{
+        width: 400px;
+    }
+
+    .container .body .rightSide .sectionB .imgDiv3{
+        width: 400px;
+    }
+    .container .body .leftSide .sectionA .imgDiv .infoDiv .titleDiv{
+        font-size:3rem;
+    }
+    
+    .container .body .rightSide .sectionB .imgDiv2 .infoDiv2 .titleDiv2{
+        font-size:3rem;
+    }
+    
+    .container .body .rightSide .sectionB .imgDiv3 .infoDiv3 .titleDiv3{
+        font-size:3rem;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .container .body .leftSide .sectionA .imgDiv{
+        width: 300px;
+    } 
+
+    .container .body .rightSide .sectionB .imgDiv2{
+        width: 300px;
+    }
+
+    .container .body .rightSide .sectionB .imgDiv3{
+        width: 300px;
+    }
+
+    .container .body .leftSide .sectionA .imgDiv .infoDiv .titleDiv{
+        font-size:2.6rem;
+    }
+
+    .container .body .rightSide .sectionB .imgDiv2 .infoDiv2 .titleDiv2{
+        font-size:2.6rem;
+    }
+
+    .container .body .rightSide .sectionB .imgDiv3 .infoDiv3 .titleDiv3{
+        font-size:2.6rem;
+    }
+}
+
+@media only screen and (max-width:630px){
+    .container .body{
+        flex-direction: column;
+    }
+    .container .body .leftSide .sectionA .imgDiv{
+        height: 300px;
+        width: 400px;
+        margin:0px 0px 5px 5px;
+    } 
+
+    .container .body .leftSide .sectionA .imgDiv .beersSection{
+        margin:0px 0px 5px 5px;
+    }
+
+    .container .body .leftSide .sectionA .imgDiv .infoDiv{
+        margin:0px 0px 5px 5px;
+    }
+
+    .container .body .rightSide .sectionB .imgDiv2{
+        width: 400px;
+    }
+
+    .container .body .rightSide .sectionB .imgDiv3{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width:430px){
+.container .body .leftSide .sectionA .imgDiv{
+    height: 250px;
+    width: 280px;
+} 
+
+.container .body .rightSide .sectionB .imgDiv2{
+    height: 250px;
+    width: 280px;
+}
+
+.container .body .rightSide .sectionB .imgDiv3{
+    height: 250px;
+    width: 280px;
+}
+.container .body .leftSide .sectionA .imgDiv .infoDiv .titleDiv{
+    font-size:3rem;
+}
+
+.container .body .rightSide .sectionB .imgDiv2 .infoDiv2 .titleDiv2{
+    font-size:3rem;
+}
+
+.container .body .rightSide .sectionB .imgDiv3 .infoDiv3 .titleDiv3{
+    font-size:3rem;
+}
+}
+
+@media only screen and (max-width:380px){
+    .container .body .leftSide .sectionA .imgDiv{
+        height: 230px;
+        width: 250px;
+    } 
+    
+    .container .body .rightSide .sectionB .imgDiv2{
+        height: 230px;
+        width: 250px;
+    }
+    
+    .container .body .rightSide .sectionB .imgDiv3{
+        height: 230px;
+        width: 250px;
+    }
+
+    .container .body .leftSide .sectionA .imgDiv .infoDiv .titleDiv{
+        font-size:2.8rem;
+    }
+
+    .container .body .rightSide .sectionB .imgDiv2 .infoDiv2 .titleDiv2{
+        font-size:2.8rem;
+    }
+
+    .container .body .rightSide .sectionB .imgDiv3 .infoDiv3 .titleDiv3{
+        font-size:2.8rem;
+    
+    }
+}
+
