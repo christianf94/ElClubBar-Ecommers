@@ -1,14 +1,12 @@
 import React from 'react'
 import {useState , useEffect} from "react"  
 import "../../styles/ItemListContainer.css"
-import ItemCard from "./ItemCard"
+import ItemCard from "../global/ItemCard"
 import productBeer from "../../productBeer.json"
 
 function ItemListContainer() {
 
     const [item, setItems] = useState ([])
-
-
 
     const getProducts = new Promise((resolve,reject) => {
         setTimeout(() => {
@@ -29,7 +27,7 @@ function ItemListContainer() {
                         {
                             item.map(item => (
                                 <ItemCard 
-                                    key={item.id}
+                                    id={item.id}
                                     src={item.src} 
                                     alt={item.alt} 
                                     item={item.item} 

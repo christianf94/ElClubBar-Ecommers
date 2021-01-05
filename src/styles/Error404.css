@@ -1,0 +1,79 @@
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+.container .infoDiv-Error{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    margin:60px 10px 10px 10px;
+    padding:5px;
+    letter-spacing: 2px;
+}
+
+.container .infoDiv-Error .errorName{
+    font-size:10rem;
+    color:white;
+    margin:10px;
+    padding:4px;
+    border:solid 10px orange;
+}
+
+.container .infoDiv-Error .error {
+    font-size:9.5rem;
+    color:grey;
+}
+
+.container  .detailError{
+    font-size:4.5rem;
+    letter-spacing: 2px;
+    color:white;
+    margin:10px;
+    padding:4px;
+}
+
+.container .infoDiv-Error .pulse {
+    animation: pulse-animation 2s infinite;
+    box-shadow: 0px 0px 1px 1px #ffffff1a;
+}
+
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 0 20px rgba(99, 99, 99, 0);
+    }
+}
+
+@media only screen and (max-width:900px){
+    .container .infoDiv-Error .errorName{
+        font-size:8.5rem;
+    }
+
+    .container .infoDiv-Error .error {
+        font-size:6.5rem;
+    }
+
+    .container  .detailError{
+        font-size:3.5rem;
+    }
+}
+
+@media only screen and (max-width:680px){
+    .container .infoDiv-Error .errorName{
+        font-size:6.5rem;
+    }
+
+    .container .infoDiv-Error .error {
+        font-size:4.5rem;
+    }
+
+    .container  .detailError{
+        font-size:2.5rem;
+    }
+}

@@ -1,8 +1,10 @@
 import "../../styles/NavItem.css"
-const NavItem = ({text,url = "#"}) => (
+import {Link} from "react-router-dom"
+
+const NavItem = ({text,to}) => (
     <div className="itemList">
         <li>
-            <a href={url}>{text}</a>
+            <Link to={to} className="titleDiv">{text}</Link>
         </li>
     </div>
 )

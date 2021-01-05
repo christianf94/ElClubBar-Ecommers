@@ -23,7 +23,8 @@
         "price": "$830",
         "src":"https://masdemucho.com.ar/wp-content/uploads/2020/05/f689c1bf-d003-48ac-b86f-412b189aac61.jpg",
         "alt":"Mix Cervezas Temple x6",
-        "stocks":10
+        "stocks":10,
+        "detail":""
     },
 
     {

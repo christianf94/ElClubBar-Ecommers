@@ -66,6 +66,7 @@
 .navBar .centerSide #hidden{
     display: flex;
 }
+
 /* ------------------------------------------------------------------------------------@MEDIAS-------------------*/
 @media only screen and (max-width:650px){
 
