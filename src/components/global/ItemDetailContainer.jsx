@@ -8,12 +8,11 @@ import {useParams} from "react-router-dom";
 const ItemDetailContainer = () => {
     const {id} = useParams()
     const [product, setProduct] = useState(null)
+    
 
     const getproduct = new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(BeersProductList[id])
-            console.log (id)
-        }, 2000);
+        const selectedProduct = BeersProductList.filter(item => item.id === parseInt(id));
+        resolve(selectedProduct[0]);
     })
 
     const ProductCall = () => {

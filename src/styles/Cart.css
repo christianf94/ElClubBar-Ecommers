@@ -1,0 +1,55 @@
+.Cart {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    width: 30%;
+    position: fixed;
+    right: -30%;
+    top: 0;
+    background: rgba(141, 141, 141, 0.925);
+    z-index: 2;
+    box-shadow: -0.3rem 0 0.3rem rgba(0, 0, 0, 0.2);
+    transition: right 0.5s;
+    border-radius: 40px 0px 40px 0px;
+    border:solid 2px black;}
+
+.Cart .bottonSideCart{
+    flex:30%;
+    display:flex;
+    align-self: flex-end;
+    width: 15%;
+}
+
+.Cart .bottonSideCart .closeButton{
+    width: 100%;
+    height: 10%;
+    margin:10px;
+    font-weight: bolder;
+    color:white;
+    border:0;
+    background-color: black;
+    cursor: pointer;
+    font-size:1rem;
+}
+
+.Cart .centerSideCart{
+    flex:70%;
+}
+
+.Cart .centerSideCart .titleDiv{
+    font-size:2.6rem;
+    letter-spacing: 2px;
+    margin:10px;
+    padding:5px;
+    border:2px solid orange;
+}
+
+.close {
+    right: -30%;
+}
+
+.open {
+    right: 0;
+}

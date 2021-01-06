@@ -23,7 +23,8 @@
         "price": "$830",
         "src":"https://masdemucho.com.ar/wp-content/uploads/2020/05/f689c1bf-d003-48ac-b86f-412b189aac61.jpg",
         "alt":"Mix Cervezas Temple x6",
-        "stocks":10
+        "stocks":10,
+        "detail":"Pack de 6 latas 473CC de la Cerveria Temple, que incluye 2 latas de  Wolf IPA, 2 latas de  Honey y 2 de Scottish"
     },
 
     {
@@ -32,7 +33,8 @@
         "src":"https://cdn.shopify.com/s/files/1/0287/0322/7979/products/DarwinWeizen-6_900x.jpg?v=1594735755",
         "alt":"Cerveza Darwin Weizen x6",
         "price": "$850",
-        "stocks":23
+        "stocks":23,
+        "detail":"Pack de 6 cervezas de trigo de estilo alemán. De color rubia con marcada turbidez por las levaduras presentes, esta cerveza de amargor bajo pero sabor intenso y refrescante ofrece un característico aroma a clavo de olor y banana."
     },
 
     {
@@ -41,7 +43,8 @@
         "src":"https://http2.mlstatic.com/pack-x-24-barstow-honey-cerveza-artesanal-lata-473ml-D_NQ_NP_989777-MLA41962435260_052020-F.webp" ,
         "alt":"Cerveza Barstow Honey Pack latas x6",
         "price": "$710",
-        "stocks":4
+        "stocks":4,
+        "detail":"Cerveza honey con notas florales y melosas y su puntito de más de alcohol, la hace una cerveza irresistible a cualquier paladar."
     },
 
     {

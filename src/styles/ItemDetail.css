@@ -19,6 +19,10 @@
     height: 100%;
 }
 
+.container .detailDiv .imageDiv {
+    flex:50%;
+}
+
 .container .detailDiv .imageDiv .itemImg{
     width: 500px;
     height: 500px;
@@ -34,6 +38,7 @@
 
 .container .detailDiv .infoDiv{
     display:flex;
+    flex:50%;
     flex-direction:column;
     padding:10px;
     margin: 5px;

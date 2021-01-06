@@ -4,8 +4,15 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons"
 import NavItem from "../navbar/NavItem"
 import CartWidget from "../cart/CartWidget"
+
 function Navbar() {
     const [showLinks, setShowLinks] = useState(false);
+
+    const [showWidgetCart, setShowWidgetCart] = useState(false);
+
+    const openWidgetCart = () => {
+        setShowWidgetCart(!showWidgetCart);
+    }
 
     return (
         <>
@@ -26,7 +33,7 @@ function Navbar() {
                     </div>
                 </div>
                 <div className="rightSide">
-                    <CartWidget/>
+                    <CartWidget  show={showWidgetCart}  action={openWidgetCart}/>
                     <FontAwesomeIcon icon={faBars} className="iconMenu" onClick={()=> setShowLinks(!showLinks)}/>
                 </div>
             </nav>

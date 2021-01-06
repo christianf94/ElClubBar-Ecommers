@@ -24,9 +24,6 @@ function App() {
     <Route path="/cart">
       <CartPage/>
     </Route>
-    <Route path="/cheackout">
-      
-    </Route>
     <Route path="*">
       <Error404/>
     </Route>

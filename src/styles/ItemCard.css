@@ -21,6 +21,7 @@
 .cardItem .imageDiv{
     display: flex;
     justify-content: center;
+    flex:50%;
 }
 
 .cardItem .imageDiv img{
@@ -29,6 +30,7 @@
 
 .cardItem .infoDiv{
     background-color: orange;
+    flex:50%;
     width: 300px;
     height:400px;
     border-radius: 0px 0px 10px 10px;
