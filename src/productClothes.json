@@ -1,128 +1,37 @@
 [   
     {
         "id": 1,
-        "item": "ANDES NEGRA PACK X6" ,
-        "price": "$740",
-        "src":"https://d26lpennugtm8s.cloudfront.net/stores/871/106/products/andes-negra1-f2d35f98fb08e276e115603449276102-480-0.png",
-        "alt":"Cerveza Andes Negra Pack latas x6",
+        "item": "RAMERA TEMPLE BREWERY HOMBRE " ,
+        "price": "$1240",
+        "src":"https://d26lpennugtm8s.cloudfront.net/stores/001/138/589/products/remera-brew-back-topo11-b73423a520d7ad7a4115855738537749-480-0.jpg",
+        "alt":"RAMERA TEMPLE BREWERY HOMBRE ",
         "stocks":20,
-        "detail":"Es una cerveza estilo Schwarzbier alemán con aroma y sabor a tostado, cuenta con un cuerpo intenso y robusto en boca con un amargo medio. La Andes Origen Negra, como cerveza de deleite, armoniza su leve acidez y amargor con un suave dulzor. Por sus características es ideal para acompañar postres."
+        "detail": {
+            "sizeS":"S",
+            "sizeM":"M",
+            "sizeL":"L"
+        }
     },
     {
         "id": 2,
-        "item": "TEMPLE IPA PACK X6" ,
-        "price": "$810",
-        "src":"https://d26lpennugtm8s.cloudfront.net/stores/001/135/244/products/12-pack-ipa1-f4ef8503ec8cbd866215888772729548-1024-10241-af3b04ce756d05e2f315906068427182-1024-1024.jpg",
-        "alt":"Cerveza Temple IPA x6",
+        "item": "RAMERA MUNICH BREWERY HOMBRE BLANCA" ,
+        "price": "$1310",
+        "src":"https://cervezamanush.com.ar/2020/wp-content/uploads/2020/06/remera-manush-brewery-pinos-crema-frente.jpg",
+        "alt":"RAMERA MUNICH BREWERY HOMBRE BLANCA",
         "stocks":10,
-        "detail":"Con un perfil muy americano, es una IPA cítrica y frutal consecuencia del dry hopping con lúpulo Mosaic, tiene una buen balance entre aroma, sabor, amargor y tomabilidad. ALC. 6% IBU 50 473 CC."
+        "detail":{
+            "sizeS":"S",
+            "sizeM":"M",
+            "sizeL":"L"
+        }
     },
+
     {
         "id": 3,
-        "item": "TEMPLE MIX PACK X6" ,
+        "item": "GORRA TEMPLE BREWERY TALLE UNICO NEGRA" ,
         "price": "$830",
-        "src":"https://masdemucho.com.ar/wp-content/uploads/2020/05/f689c1bf-d003-48ac-b86f-412b189aac61.jpg",
-        "alt":"Mix Cervezas Temple x6",
+        "src":"https://d26lpennugtm8s.cloudfront.net/stores/001/138/589/products/gorras-amarilla1-cb7119edfd7d21933315861117654778-480-0.jpg",
+        "alt":"GORRA TEMPLE BREWERY TALLE UNICO NEGRA",
         "stocks":10
-    },
-
-    {
-        "id": 4,
-        "item": "DARWIN BALKAN WEIZEN X6" ,
-        "src":"https://cdn.shopify.com/s/files/1/0287/0322/7979/products/DarwinWeizen-6_900x.jpg?v=1594735755",
-        "alt":"Cerveza Darwin Weizen x6",
-        "price": "$850",
-        "stocks":23
-    },
-
-    {
-        "id": 5,
-        "item": "BARSTOW HONEY PACK X6" ,
-        "src":"https://http2.mlstatic.com/pack-x-24-barstow-honey-cerveza-artesanal-lata-473ml-D_NQ_NP_989777-MLA41962435260_052020-F.webp" ,
-        "alt":"Cerveza Barstow Honey Pack latas x6",
-        "price": "$710",
-        "stocks":4
-    },
-
-    {
-        "id": 6,
-        "item": "BARSTOW MIX ALL STYLES PACK X24" ,
-        "src":"https://http2.mlstatic.com/pack-x-24-barstow-honey-cerveza-artesanal-lata-473ml-D_NQ_NP_858834-MLA41962156951_052020-F.webp",
-        "alt":"Cerveza Barstow Mix x24",
-        "price": "$4210",
-        "stocks":10
-    },
-
-    {
-        "id": 7,
-        "item": "PAMPA MIX 3 STYLES PACK X6" ,
-        "src":"https://http2.mlstatic.com/D_NQ_NP_745296-MLA43061864203_082020-O.jpg",
-        "alt":"Pampa Mix 3 Styles x6",
-        "price": "$1000",
-        "stocks":14
-    },
-
-    {
-        "id": 8,
-        "item": "ANDES PACK ROJA X6" ,
-        "src":"https://d26lpennugtm8s.cloudfront.net/stores/871/106/products/andes-roja-pack11-ad5c9e7458f3b57cbb15603448579585-1024-1024.png",
-        "alt":"Cerveza Andes Roja Pack latas x6",
-        "price": "$730",
-        "stocks":0
-    },
-    
-    {
-        "id": 9,
-        "item": "CHACHINGO MIX 4 STYLES PACK X12" ,
-        "src":"https://http2.mlstatic.com/D_NQ_NP_744575-MLA43063118394_082020-O.jpg",
-        "alt":"Cerveza Chahingo Mix 4 styles x12",
-        "price": "$2100",
-        "stocks":5
-    },
-
-    {
-        "id": 10,
-        "item": "ANTARES ATLANTICA PACK X6" ,
-        "src":"https://cdn.shopify.com/s/files/1/0287/0322/7979/products/AntaresA_900x.jpg?v=1590667546",
-        "alt":"Cerveza Atlantica de Antares pack x6",
-        "price": "$830",
-        "stocks":17
-    },
-
-    {
-        "id": 11,
-        "item": "RABIENTA MIX 3 STYLES PACK X6" ,
-        "src":"https://http2.mlstatic.com/D_NQ_NP_982212-MLA42166334242_062020-O.jpg",
-        "alt":"Rabieta Mix 3 Estilos x6",
-        "price": "$1200",
-        "stocks":21
-    },
-
-    {
-        "id": 12,
-        "item": "ANTARES 3 STYLES PACK X6" ,
-        "src":"https://cdn.shopify.com/s/files/1/0287/0322/7979/products/AntaresCombo_720x.jpg?v=1590668493",
-        "alt":"Cerveza Antares 3 Estilos pack x6",
-        "price": "$1030",
-        "stocks":17
-    },
-
-    {
-        "id":13,
-        "item":"CERVEZA MINGA MEGA MIX PACK X6",
-        "src":"https://cdn.shopify.com/s/files/1/0287/0322/7979/products/MingaMix.jpg?v=1588704208",
-        "alt": "Cerveza Minga Pack x6 Mix",
-        "price":"$990",
-        "stocks":21,
-        "detail":"Pack de 6 latas de cerveza Minga. Incluye 1 German Pills 473ml (5% ABV 30 IBU), 1 #NonStopIpa 473ml (5% AB 56 IBU), 1 Amber Lager 473ml (5% ABV 20 IBU), 1 DosBondis APA 473ml (5,7% ABV 40 IBU), 1 Juicy Lite IPA 473ml (5% ABV), 1 Tornado Stout 473ml (6.5% ABV 60 IBU)"
-    },
-
-    {
-        "id":14,
-        "item":"CERVEZA KRAKEN MEGA MIX PACK X6",
-        "src":"https://http2.mlstatic.com/D_NQ_NP_801074-MLA43547612693_092020-O.webp",
-        "alt":"Cerveza Kraken Pack x6 Mix 6 Styles",
-        "price":"$1000",
-        "stock":14,
-        "detail":"Pack de 6 cervezas Kraken en latas de 473ml, en el pack se incluye 1 estila american ipa, 1 estilo irish stout, 1 amber lager, 1 irish red, 1 borus porter y 1 sesion ipa."
-    }]
+    }
+]

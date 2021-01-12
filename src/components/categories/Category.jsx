@@ -1,6 +1,7 @@
 import {useParams} from "react-router-dom"
 import "../../styles/Category.css"
 import BeerListContainer from "./BeerListContainer"
+import ClothesListContainer from "./ClothesListContainer"
 import Error404 from "../global/Error404"
 
 const Category =() => {
@@ -21,7 +22,7 @@ const Category =() => {
                     <div className="titleSection">
                         <h2>CLOTHES</h2>
                     </div>
-                    
+                    <ClothesListContainer/>
                 </article>
             )
 

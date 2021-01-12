@@ -15,7 +15,6 @@ const ItemListContainer= ({src,alt,item,price,stocks,id}) => (
                 <div className="priceDiv">
                     <p>{price}</p>
                 </div>
-                <ItemCount stock={stocks}/>
             </div>
         </div>
     </Link>

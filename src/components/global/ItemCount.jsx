@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
+import {useHistory} from  "react-router-dom"
 import "../../styles/ItemCount.css"
 
 function ItemCount({stock}) {
     const [count,setCount] = useState (0);
+    const history = useHistory ()
 
     const addCount = (stock)  => {
         if(count < stock) {
@@ -15,7 +17,10 @@ function ItemCount({stock}) {
     }
 
     const AddCardItem = () => {
-        alert(`Haz agregado ${count} items al carrito`)
+        setTimeout(() => {
+            alert(`Haz agregado ${count} items al carrito`)
+        history.push("/cart");
+        }, 1000) 
     }
 
     return (

@@ -7,7 +7,7 @@
     justify-content: center;
     align-content: center;
     width: 300px;
-    height: 430px;
+    height: 370px;
     border-radius: 10px;
     cursor:pointer;
     letter-spacing: 1px;
@@ -50,13 +50,13 @@
     justify-content:center;
     background-color:rgb(58, 57, 57);
     width:300px;
-    height:80px;
+    height:85px;
     color: var(--color-segundario);
 }
 
 .cardItem .infoDiv .priceDiv{
     margin: 10px 0px 5px 0px;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     font-weight: bolder;
     letter-spacing:1px;
     color: black;

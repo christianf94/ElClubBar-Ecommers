@@ -11,7 +11,7 @@ const ItemDetailContainer = () => {
     
 
     const getproduct = new Promise((resolve, reject) => {
-        const selectedProduct = BeersProductList.filter(item => item.id === parseInt(id));
+        const selectedProduct = BeersProductList.filter(items => items.id === parseInt(id));
         resolve(selectedProduct[0]);
     })
 
