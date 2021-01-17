@@ -28,5 +28,13 @@
 
 .cart .divCart .listCart{
     font-weight: bold;
-    font-size:2.2rem
+    font-size:3rem;
+    margin: 10px;
+    letter-spacing: 3px;
+}
+
+.cart .divCart .listCart .title .icon{
+    font-size:8rem;
+    margin: 10px;
+    border: solid black 3px;
 }

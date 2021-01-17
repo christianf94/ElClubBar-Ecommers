@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useContext} from 'react'
 import {useHistory} from  "react-router-dom"
+import {Store} from "../../store/index"
 import "../../styles/ItemCount.css"
 
-function ItemCount({stock}) {
+function ItemCount({stock, product}) {
+
+    const [data, setData] = useContext(Store);
     const [count,setCount] = useState (0);
     const history = useHistory ()
 
@@ -17,12 +20,17 @@ function ItemCount({stock}) {
     }
 
     const AddCardItem = () => {
+        setData({
+            ...data, 
+            qty: data.qty + count,
+            items: [...data.items,  {item: product, cantidad: count}],
+            totalPrice: data.totalPrice + (product.price * count)
+        });
         setTimeout(() => {
             alert(`Haz agregado ${count} items al carrito`)
-        history.push("/cart");
+            history.push("/cart");
         }, 1000) 
     }
-
     return (
         <div className="containerCount">
             <div className="divCount">

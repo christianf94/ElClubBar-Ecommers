@@ -1,8 +1,7 @@
 import "../../styles/ItemCard.css"
-import ItemCount from "../global/ItemCount"
 import {Link} from "react-router-dom"
 
-const ItemListContainer= ({src,alt,item,price,stocks,id}) => (
+const ItemListContainer= ({src,alt,item,price,id}) => (
     <Link to={`/item/${id}`}>
         <div className="cardItem">
             <div className="imageDiv">
@@ -13,7 +12,7 @@ const ItemListContainer= ({src,alt,item,price,stocks,id}) => (
                     <h3>{item}</h3>
                 </div>
                 <div className="priceDiv">
-                    <p>{price}</p>
+                    <strong><p>${price}</p></strong>
                 </div>
             </div>
         </div>

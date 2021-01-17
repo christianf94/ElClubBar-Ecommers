@@ -46,6 +46,26 @@
     border:2px solid orange;
 }
 
+.Cart .centerSideCart .mapDiv{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    flex-wrap:wrap;
+}
+
+.Cart .centerSideCart .emptyCart{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Cart .centerSideCart .emptyCart .iconCart{
+    font-size:7rem;
+    margin: 10px;
+}
+
 .close {
     right: -30%;
 }

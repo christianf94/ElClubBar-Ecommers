@@ -2,7 +2,7 @@
     {
         "id": 1,
         "item": "ANDES NEGRA PACK X6" ,
-        "price": "$740",
+        "price": 740,
         "src":"https://d26lpennugtm8s.cloudfront.net/stores/871/106/products/andes-negra1-f2d35f98fb08e276e115603449276102-480-0.png",
         "alt":"Cerveza Andes Negra Pack latas x6",
         "stocks":20,
@@ -11,7 +11,7 @@
     {
         "id": 2,
         "item": "TEMPLE IPA PACK X6" ,
-        "price": "$810",
+        "price": 810,
         "src":"https://d26lpennugtm8s.cloudfront.net/stores/001/135/244/products/12-pack-ipa1-f4ef8503ec8cbd866215888772729548-1024-10241-af3b04ce756d05e2f315906068427182-1024-1024.jpg",
         "alt":"Cerveza Temple IPA x6",
         "stocks":10,
@@ -20,7 +20,7 @@
     {
         "id": 3,
         "item": "TEMPLE MIX PACK X6" ,
-        "price": "$830",
+        "price": 830,
         "src":"https://masdemucho.com.ar/wp-content/uploads/2020/05/f689c1bf-d003-48ac-b86f-412b189aac61.jpg",
         "alt":"Mix Cervezas Temple x6",
         "stocks":10,
@@ -32,7 +32,7 @@
         "item": "DARWIN BALKAN WEIZEN X6" ,
         "src":"https://cdn.shopify.com/s/files/1/0287/0322/7979/products/DarwinWeizen-6_900x.jpg?v=1594735755",
         "alt":"Cerveza Darwin Weizen x6",
-        "price": "$850",
+        "price": 850,
         "stocks":23,
         "detail":"Pack de 6 cervezas de trigo de estilo alemán. De color rubia con marcada turbidez por las levaduras presentes, esta cerveza de amargor bajo pero sabor intenso y refrescante ofrece un característico aroma a clavo de olor y banana."
     },
@@ -42,7 +42,7 @@
         "item": "BARSTOW HONEY PACK X6" ,
         "src":"https://http2.mlstatic.com/pack-x-24-barstow-honey-cerveza-artesanal-lata-473ml-D_NQ_NP_989777-MLA41962435260_052020-F.webp" ,
         "alt":"Cerveza Barstow Honey Pack latas x6",
-        "price": "$710",
+        "price": 710,
         "stocks":4,
         "detail":"Cerveza honey con notas florales y melosas y su puntito de más de alcohol, la hace una cerveza irresistible a cualquier paladar."
     },
@@ -52,7 +52,7 @@
         "item": "BARSTOW MIX ALL STYLES PACK X24" ,
         "src":"https://http2.mlstatic.com/pack-x-24-barstow-honey-cerveza-artesanal-lata-473ml-D_NQ_NP_858834-MLA41962156951_052020-F.webp",
         "alt":"Cerveza Barstow Mix x24",
-        "price": "$4210",
+        "price": 4210,
         "stocks":10
     },
 
@@ -61,7 +61,7 @@
         "item": "PAMPA MIX 3 STYLES PACK X6" ,
         "src":"https://http2.mlstatic.com/D_NQ_NP_745296-MLA43061864203_082020-O.jpg",
         "alt":"Pampa Mix 3 Styles x6",
-        "price": "$1000",
+        "price": 1000,
         "stocks":14
     },
 
@@ -70,7 +70,7 @@
         "item": "ANDES PACK ROJA X6" ,
         "src":"https://d26lpennugtm8s.cloudfront.net/stores/871/106/products/andes-roja-pack11-ad5c9e7458f3b57cbb15603448579585-1024-1024.png",
         "alt":"Cerveza Andes Roja Pack latas x6",
-        "price": "$730",
+        "price": 730,
         "stocks":0
     },
     
@@ -79,7 +79,7 @@
         "item": "CHACHINGO MIX 4 STYLES PACK X12" ,
         "src":"https://http2.mlstatic.com/D_NQ_NP_744575-MLA43063118394_082020-O.jpg",
         "alt":"Cerveza Chahingo Mix 4 styles x12",
-        "price": "$2100",
+        "price": 2100,
         "stocks":5
     },
 
@@ -88,7 +88,7 @@
         "item": "ANTARES ATLANTICA PACK X6" ,
         "src":"https://cdn.shopify.com/s/files/1/0287/0322/7979/products/AntaresA_900x.jpg?v=1590667546",
         "alt":"Cerveza Atlantica de Antares pack x6",
-        "price": "$830",
+        "price": 830,
         "stocks":17
     },
 
@@ -97,7 +97,7 @@
         "item": "RABIENTA MIX 3 STYLES PACK X6" ,
         "src":"https://http2.mlstatic.com/D_NQ_NP_982212-MLA42166334242_062020-O.jpg",
         "alt":"Rabieta Mix 3 Estilos x6",
-        "price": "$1200",
+        "price": 1200,
         "stocks":21
     },
 
@@ -106,7 +106,7 @@
         "item": "ANTARES 3 STYLES PACK X6" ,
         "src":"https://cdn.shopify.com/s/files/1/0287/0322/7979/products/AntaresCombo_720x.jpg?v=1590668493",
         "alt":"Cerveza Antares 3 Estilos pack x6",
-        "price": "$1030",
+        "price": 1030,
         "stocks":17
     },
 
@@ -115,7 +115,7 @@
         "item":"CERVEZA MINGA MEGA MIX PACK X6",
         "src":"https://cdn.shopify.com/s/files/1/0287/0322/7979/products/MingaMix.jpg?v=1588704208",
         "alt": "Cerveza Minga Pack x6 Mix",
-        "price":"$990",
+        "price":990,
         "stocks":21,
         "detail":"Pack de 6 latas de cerveza Minga. Incluye 1 German Pills 473ml (5% ABV 30 IBU), 1 #NonStopIpa 473ml (5% AB 56 IBU), 1 Amber Lager 473ml (5% ABV 20 IBU), 1 DosBondis APA 473ml (5,7% ABV 40 IBU), 1 Juicy Lite IPA 473ml (5% ABV), 1 Tornado Stout 473ml (6.5% ABV 60 IBU)"
     },
@@ -125,7 +125,7 @@
         "item":"CERVEZA KRAKEN MEGA MIX PACK X6",
         "src":"https://http2.mlstatic.com/D_NQ_NP_801074-MLA43547612693_092020-O.webp",
         "alt":"Cerveza Kraken Pack x6 Mix 6 Styles",
-        "price":"$1000",
+        "price":1000,
         "stock":14,
         "detail":"Pack de 6 cervezas Kraken en latas de 473ml, en el pack se incluye 1 estila american ipa, 1 estilo irish stout, 1 amber lager, 1 irish red, 1 borus porter y 1 sesion ipa."
     }]

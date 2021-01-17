@@ -12,9 +12,9 @@ const ItemDetail = ({item}) => {
                 <div className="infoDiv">
                     <h1 className="itemName">{item.item}</h1>
                     <p className="itemDetail">{item.detail}</p>
-                    <p className="itemPrice">{item.price}</p>
+                    <p className="itemPrice"><strong>${item.price}</strong></p>
                     <div className="itemCount">
-                        <ItemCount stock={item.stocks}/>
+                        <ItemCount stock={item.stocks} product={item}/>
                     </div>
                 </div>
             </div>
