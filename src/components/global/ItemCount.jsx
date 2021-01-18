@@ -19,13 +19,27 @@ function ItemCount({stock, product}) {
         setCount(count - 1);
     }
 
-    const AddCardItem = () => {
-        setData({
-            ...data, 
-            qty: data.qty + count,
-            items: [...data.items,  {item: product, cantidad: count}],
-            totalPrice: data.totalPrice + (product.price * count)
-        });
+    const addCardItem = () => {
+        var found = false
+        data.items.forEach(item => {if (item.id === product.id) {
+            item.cantidad = item.cantidad + count
+        found = true
+            setData({
+                ...data,
+                qty: data.qty + count,
+                items: [...data.items],
+                totalPrice: data.totalPrice + (product.price * count)
+            }); 
+        } })
+        if (found == false){
+            setData({
+                ...data,
+                qty: data.qty + count,
+                items: [...data.items,  {...product, cantidad: count}],
+                totalPrice: data.totalPrice + (product.price * count)
+            });
+        }
+
         setTimeout(() => {
             alert(`Haz agregado ${count} items al carrito`)
             history.push("/cart");
@@ -38,7 +52,7 @@ function ItemCount({stock, product}) {
                 <input id="inputCount" type="number" readOnly value={count}/>
                 <button className="buttonCount" onClick={() =>  addCount(stock)}>+</button>
             </div>
-            <button className="buttonAddItem" disabled={!count ? "disabled" : null } onClick={AddCardItem}>Agregar al Carrito</button>
+            <button className="buttonAddItem" disabled={!count ? "disabled" : null } onClick={addCardItem}>Agregar al Carrito</button>
         </div>
     )   
 }

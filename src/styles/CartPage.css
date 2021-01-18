@@ -33,6 +33,15 @@
     letter-spacing: 3px;
 }
 
+.cart .divCart .listCart .itemsDiv{
+    display:flex;
+    flex-direction: column;
+
+}
+.cart .divCart .listCart .itemsDiv .itemCart{
+    display:flex;
+}
+
 .cart .divCart .listCart .title .icon{
     font-size:8rem;
     margin: 10px;

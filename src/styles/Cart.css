@@ -16,15 +16,15 @@
     border:solid 2px black;}
 
 .Cart .bottonSideCart{
-    flex:30%;
+    flex:10%;
     display:flex;
     align-self: flex-end;
-    width: 15%;
+    width: 10%;
 }
 
 .Cart .bottonSideCart .closeButton{
     width: 100%;
-    height: 10%;
+    height: 40%;
     margin:10px;
     font-weight: bolder;
     color:white;
@@ -35,7 +35,11 @@
 }
 
 .Cart .centerSideCart{
-    flex:70%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    flex:90%;
 }
 
 .Cart .centerSideCart .titleDiv{
