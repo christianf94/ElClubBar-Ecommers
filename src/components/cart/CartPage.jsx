@@ -34,7 +34,7 @@ function CartPage() {
                         key={item.id} 
                         item={item} 
                         id={item.id}     
-                        quantity={data.qty}  
+                        quantity={item.cantidad}  
                         />
                         </li>)}
                         <div className="">

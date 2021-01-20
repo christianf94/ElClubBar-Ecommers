@@ -53,9 +53,12 @@ const WidgetCart = ({show, action}) => {
                 }
             </div>
             <div className="">
+                            <p>Precio Final:${data.totalPrice}</p>
+            </div>
+            <div className="">
                     <button className="" onClick={()=> resetCart()}>Vaciar Carrito</button>
                     <button className="" onClick={()=> redirectCart()}>Ver Carrito</button>
-                </div>
+            </div>
         </div>
     )
 }

@@ -2,9 +2,9 @@ import React, {useContext, useState} from 'react';
 import {Store} from '../../store/index';
 import "../../styles/CartItem.css"
 
-const CartItem = ({key,item,id,quiantity}) => {
+const CartItem = ({key,item,id,quantity}) => {
     const [data, setData]= useContext(Store);
-    const [qtyParcial, setQtyParcial]= useState(quiantity)
+    const [qtyParcial, setQtyParcial]= useState(quantity)
 
     function onRemove(){
         const find = data.items.find((prod) => prod.id == id);
@@ -13,7 +13,7 @@ const CartItem = ({key,item,id,quiantity}) => {
         setData({ 
             ...data, 
             items: filter,
-            qty: data.qty - quiantity,
+            qty: data.qty - quantity,
             totalPrice: data.totalPrice - (find.price*find.cantidad)
         });
         setQtyParcial(qtyParcial-data.qty)
