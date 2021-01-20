@@ -26,6 +26,7 @@ function ItemCount({stock, product}) {
         found = true
             setData({
                 ...data,
+                qtyproduct: count,
                 qty: data.qty + count,
                 items: [...data.items],
                 totalPrice: data.totalPrice + (product.price * count)
@@ -34,6 +35,7 @@ function ItemCount({stock, product}) {
         if (found == false){
             setData({
                 ...data,
+                qtyproduct: count,
                 qty: data.qty + count,
                 items: [...data.items,  {...product, cantidad: count}],
                 totalPrice: data.totalPrice + (product.price * count)
@@ -42,7 +44,7 @@ function ItemCount({stock, product}) {
 
         setTimeout(() => {
             alert(`Haz agregado ${count} items al carrito`)
-            history.push("/cart");
+            history.push("/");
         }, 1000) 
     }
     return (

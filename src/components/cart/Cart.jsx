@@ -3,12 +3,27 @@ import {useContext} from "react";
 import {Store} from "../../store/index";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBoxOpen} from "@fortawesome/free-solid-svg-icons";
-import {Link} from "react-router-dom"
+import {useHistory} from  "react-router-dom"
+
 
 
 const WidgetCart = ({show, action}) => {
 
     const [data, setData] = useContext(Store);
+    const history = useHistory ()
+
+
+    const resetCart = () => {
+        setData({
+            items: [],
+            qty: 0,
+            totalPrice:0,
+        }); 
+    }
+
+    const redirectCart = () => {
+        history.push("/cart");
+    }
 
     return (
         <div className={`Cart ${show ? 'open' : 'close'}`}>
@@ -17,7 +32,7 @@ const WidgetCart = ({show, action}) => {
             </div>
             <div className="centerSideCart">
                 {
-                    data.qty == 0 ?
+                    data.totalPrice == 0 ?
                     <div className="emptyCart">
                         <FontAwesomeIcon icon={faBoxOpen} className="iconCart"/>
                         <p className="titleDiv">No Hay Productos en Lista</p> 
@@ -37,6 +52,10 @@ const WidgetCart = ({show, action}) => {
                     </div>
                 }
             </div>
+            <div className="">
+                    <button className="" onClick={()=> resetCart()}>Vaciar Carrito</button>
+                    <button className="" onClick={()=> redirectCart()}>Ver Carrito</button>
+                </div>
         </div>
     )
 }

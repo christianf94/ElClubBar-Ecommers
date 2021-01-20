@@ -14,6 +14,7 @@ function App() {
   const [data, setData]= useState({
     items: [],
     qty: 0,
+    qtyproduct: 0,
     totalPrice: 0,
   });
   

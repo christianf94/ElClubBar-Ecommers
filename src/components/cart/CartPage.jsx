@@ -1,8 +1,9 @@
 import "../../styles/CartPage.css"
-import {useContext} from "react"
+import {useContext, useState} from "react"
 import {Store} from "../../store"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBoxOpen} from "@fortawesome/free-solid-svg-icons"
+import CartItem from "../cart/CartItem"
 
 
 function CartPage() {
@@ -22,22 +23,19 @@ function CartPage() {
             <article className="divCart" >
                 <div className="listCart">
                 {
-                    data.qty === 0 ?
+                    data.totalPrice == 0 ?
                     <div className="title">
                     <FontAwesomeIcon icon={faBoxOpen} className="icon"/>
                     <p>No Hay Productos en Lista</p>
                     </div>:
                     <div className="itemsDiv">
                         {data.items.map(item =><li class="itemCart">
-                            <div className="">
-                                <img src={item.src} alt={item.alt} width="300px" height="230px"/>
-                            </div>
-                            <div>
-                                <h2>{item.item}</h2>
-                                <p>Cantidad: {item.cantidad}</p>
-                                <p>Precio por unidad:<strong>${item.price}</strong></p>
-                                <p>Precio total:<strong>${item.price * item.cantidad}</strong></p>
-                            </div>
+                        <CartItem
+                        key={item.id} 
+                        item={item} 
+                        id={item.id}     
+                        quantity={data.qty}  
+                        />
                         </li>)}
                         <div className="">
                             <p>Precio Final:${data.totalPrice}</p>
