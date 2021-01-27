@@ -14,6 +14,7 @@
     justify-content: center;
     text-transform: uppercase;
     align-items:center;
+    flex-direction: column;
     font-size: 3rem;
     color:white;
     letter-spacing: 4px;
