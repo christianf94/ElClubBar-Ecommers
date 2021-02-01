@@ -1,12 +1,14 @@
 import "../../styles/CartPage.css"
-import {useContext, useState} from "react"
+import {useContext} from "react"
 import {Store} from "../../store"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBoxOpen} from "@fortawesome/free-solid-svg-icons"
+import {useHistory} from  "react-router-dom"
 import CartItem from "../cart/CartItem"
 
 
 function CartPage() {
+    const history = useHistory ()
     const [data, setData] = useContext(Store);
 
     const resetCart = () => {
@@ -16,6 +18,11 @@ function CartPage() {
             totalPrice:0,
         }); 
     }
+    
+
+    const redirectCheckOut = () => {
+        history.push("/checkout");
+    }
 
     return ( 
         <body className="cart">
@@ -23,7 +30,7 @@ function CartPage() {
             <article className="divCart" >
                 <div className="listCart">
                 {
-                    data.totalPrice == 0 ?
+                    data.totalPrice === 0 ?
                     <div className="title">
                     <FontAwesomeIcon icon={faBoxOpen} className="icon"/>
                     <p>No Hay Productos en Lista</p>
@@ -42,7 +49,7 @@ function CartPage() {
                         </div>
                         <div className="">
                             <button className="" onClick={()=> resetCart()}>Vaciar Carrito</button>
-                            <button className="">Realizar Compra</button>
+                            <button className="" onClick={()=> redirectCheckOut()} >Realizar Compra</button>
                         </div>
                     </div>
                 }  

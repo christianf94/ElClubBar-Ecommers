@@ -58,7 +58,7 @@ function ItemListContainer() {
                                     item={item.data.item} 
                                     price={item.data.price} 
                                     stocks={item.data.stocks}
-                                    category={item.data.category}
+                                    
                                 /> ))
                         }
                     </article> :

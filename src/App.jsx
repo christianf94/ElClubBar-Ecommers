@@ -7,6 +7,7 @@ import ItemDetailContainer from "./components/global/ItemDetailContainer";
 import Category from "./components/categories/Category";
 import CartPage from "./components/cart/CartPage";
 import Error404 from "./components/global/Error404";
+import CheckOut from "./components/checkout/CheckOut"
 import {Store} from "./store/index";
 
 function App() {
@@ -25,14 +26,17 @@ function App() {
           <Route exact path="/">
             <Home/>
           </Route>
-          <Route path="/category/:category_name?">
+          <Route  path="/cart">
+            <CartPage/>
+          </Route>
+          <Route path="/checkout">
+            <CheckOut/>
+          </Route>
+          <Route exact path="/category/:category_name?">
             <Category/>
           </Route>
-          <Route path="/item/:id?">
+          <Route exact  path="/item/:id?">
             <ItemDetailContainer/>
-          </Route>
-          <Route path="/cart">
-            <CartPage/>
           </Route>
           <Route path="*">
             <Error404/>

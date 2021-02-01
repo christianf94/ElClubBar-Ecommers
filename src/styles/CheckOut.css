@@ -1,0 +1,47 @@
+.checkout{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.checkout .container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout .container .titleDiv{
+    text-align: center;
+    font-size:3rem;
+    color:white;
+    border-bottom:10px orange solid;
+    width: 80%;
+}
+
+.checkout .container form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:15px;
+    width: 60%;
+    height: 80%;
+}
+
+.checkout .container form input{
+    text-align: center;
+    width: 90%;
+    margin:4px;
+    border-radius: 15%;
+}
+
+.checkDiv{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:2.5rem;
+    color:white;
+    
+}
+

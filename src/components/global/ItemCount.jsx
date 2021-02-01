@@ -31,7 +31,7 @@ function ItemCount({stock, product}) {
                 totalPrice: data.totalPrice + (product.price * count)
             }); 
         } })
-        if (found == false){
+        if (found === false){
             setData({
                 ...data,
                 qty: data.qty + count,
