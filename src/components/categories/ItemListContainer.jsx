@@ -29,6 +29,7 @@ function ItemListContainer() {
     })
 */
     useEffect(()=> {
+        console.log(category_name)
         if(category_name) {
             db.collection('product').where('category', '==', category_name).get()
             .then(response => {
@@ -41,7 +42,7 @@ function ItemListContainer() {
             })
         }
         //getProducts.then(rta => setItems(rta));
-    })
+    });
 
     return ( 
         <body className="container">

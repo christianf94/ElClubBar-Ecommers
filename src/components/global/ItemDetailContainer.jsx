@@ -23,7 +23,7 @@ const ItemDetailContainer = () => {
         db.collection("product").doc(id).get()
         .then(response => {
             if(response.exists) {
-                setProduct(response.data());
+                setProduct({id:response.id, data:response.data()});
             }
         })
         //ProductCall(), [])
@@ -39,12 +39,12 @@ const ItemDetailContainer = () => {
                         <ItemDetail key={id}
                             item={product} 
                             id={product.id}                
-                            src={product.src}
-                            name={product.item}
-                            detail={product.detail}
-                            price={product.price}
-                            stock={product.stocks}
-                            alt={product.alt}/>
+                            src={product.data.src}
+                            name={product.data.item}
+                            detail={product.data.detail}
+                            price={product.data.price}
+                            stock={product.data.stocks}
+                            alt={product.data.alt}/>
                     </section>
                 </body> :
                     <article className="loadScreen">

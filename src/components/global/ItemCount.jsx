@@ -28,7 +28,7 @@ function ItemCount({stock, product}) {
                 ...data,
                 qty: data.qty + count,
                 items: [...data.items],
-                totalPrice: data.totalPrice + (product.price * count)
+                totalPrice: data.totalPrice + (product.data.price * count)
             }); 
         } })
         if (found === false){
@@ -36,10 +36,10 @@ function ItemCount({stock, product}) {
                 ...data,
                 qty: data.qty + count,
                 items: [...data.items,  {...product, cantidad: count}],
-                totalPrice: data.totalPrice + (product.price * count)
+                totalPrice: data.totalPrice + (product.data.price * count)
             });
         }
-
+        
         setTimeout(() => {
             alert(`Haz agregado ${count} items al carrito`)
             history.push("/");

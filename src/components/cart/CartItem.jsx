@@ -7,14 +7,13 @@ const CartItem = ({key,item,id,quantity}) => {
     const [qtyParcial, setQtyParcial]= useState(quantity)
 
     function onRemove(){
-        const find = data.items.find((prod) => prod.id == id);
+        const find = data.items.find((prod) => prod.id === id);
         const filter = data.items.filter((prod) => prod.id !== id);
-        console.log(filter);
         setData({ 
             ...data, 
             items: filter,
             qty: data.qty - quantity,
-            totalPrice: data.totalPrice - (find.price*find.cantidad)
+            totalPrice: data.totalPrice - (find.data.price*find.cantidad)
         });
         setQtyParcial(qtyParcial-data.qty)
     }
@@ -25,13 +24,13 @@ const CartItem = ({key,item,id,quantity}) => {
                 <button onClick ={() => onRemove(item.id)}>X</button>
             </div>
             <div className="">
-                <img src={item.src} alt={item.alt} width="300px" height="230px"/>
+                <img src={item.data.src} alt={item.data.alt} width="300px" height="230px"/>
             </div>
             <div>
-                <h2>{item.item}</h2>
+                <h2>{item.data.item}</h2>
                 <p>Cantidad: {item.cantidad}</p>
-                <p>Precio por unidad:<strong>${item.price}</strong></p>
-                <p>Precio total:<strong>${item.price * item.cantidad}</strong></p>
+                <p>Precio por unidad:<strong>${item.data.price}</strong></p>
+                <p>Precio total:<strong>${item.data.price * item.cantidad}</strong></p>
             </div>
         </div>
         );

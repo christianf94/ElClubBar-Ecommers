@@ -40,13 +40,13 @@ const WidgetCart = ({show, action}) => {
                     <div className="mapDiv">
                         {data.items.map(item => <li className="titleDiv">
                             <div className="">
-                                <img src={item.src} alt={item.alt} width="200px" height="130px"/>
+                                <img src={item.data.src} alt={item.data.alt} width="200px" height="130px"/>
                             </div>
                             <div>
-                                <h2>{item.item}</h2>
+                                <h2>{item.data.item}</h2>
                                 <p>Cantidad: {item.cantidad}</p>
-                                <p>Precio por unidad:<strong>${item.price}</strong></p>
-                                <p>Precio total:<strong>${item.price * item.cantidad}</strong></p>
+                                <p>Precio por unidad:<strong>${item.data.price}</strong></p>
+                                <p>Precio total:<strong>${item.data.price * item.cantidad}</strong></p>
                             </div>
                         </li> )}
                     </div>
