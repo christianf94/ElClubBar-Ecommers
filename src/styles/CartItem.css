@@ -1,0 +1,91 @@
+.cartContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgb(56, 56, 56) 0%, rgb(36, 36, 36) 100%);
+    width: 600px;
+    margin: 8px;
+}
+
+.cartContainer .leftDiv{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex:50%;
+    border-radius:10px 0px 0px 10px;
+    border:3px solid rgb(37, 37, 37);
+    background: white;
+    width: 100%;
+    height: 260px;
+}
+
+.cartContainer .leftDiv .imgDiv{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    border-radius:4%;
+    
+}
+
+.cartContainer .leftDiv .imgDiv img{
+    width: 100%;
+    border-radius:4%;
+    border:1px solid rgb(255, 255, 255)
+}
+
+.cartContainer .rightDive{
+    flex:50%;
+    border-radius:0px 10px 10px 0px;
+    border:3px solid orange;
+    height: 260px;
+}
+
+.cartContainer .rightDive .nameDiv{
+    background:orange;
+    width: 100%;
+    height: 74px;
+    display: flex;
+    justify-content: center;
+}
+
+.cartContainer .rightDive .nameDiv h2{
+    line-height:20px;
+    font-size:2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.cartContainer .rightDive .infoDiv{
+    font-family: revert;
+    font-size:2rem;
+    color: rgb(226, 226, 226);
+    font-weight: lighter;
+    letter-spacing: 1px;
+    line-height: 50px;
+}
+
+.cartContainer .rightDive .infoDiv strong{
+    letter-spacing: 2px;
+    color:rgb(102, 102, 102);
+}
+
+.cartContainer .closeButton{
+    width: 20px;
+    height: 20px;
+    font-weight: bolder;
+    color:white;
+    border:0;
+    border-radius: 5px;
+    background-color: black;
+    cursor: pointer;
+    font-size:1rem;
+    position: relative;
+    top: -116px;
+    left: -4px; 
+}
+
+.cartContainer .closeButton:hover{
+    background-color:rgb(165, 14, 14) ;
+}

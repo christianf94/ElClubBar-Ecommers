@@ -2,30 +2,7 @@ import "../../styles/Home.css"
 import {Link} from "react-router-dom"
 
 function Home() {
-    /*
-    import {useState , useEffect} from "react";
-import {getFirestone} from "../../db/index.js";
-import ItemCard from "../global/ItemCard"
-    const [item, setItems] = useState ([]);
-    const db = getFirestone();
-
-    const getOutStanding = () => {
-        db.collection('product').where('outstanding', '==', "true").get()
-        .then(response => {
-            let arr = [];
-            response.forEach(doc => {
-                arr.push({id: doc.id, data: doc.data()})
-            })
-            setItems(arr);
-    })
-    .catch(e => console.log(e));
-} 
-
-    useEffect(()=> {
-        getOutStanding();
-    }, [])
-
-*/
+ 
     return (
     <body className="container">
         <section className="body">

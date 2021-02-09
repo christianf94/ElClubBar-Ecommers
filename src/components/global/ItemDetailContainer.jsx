@@ -8,16 +8,7 @@ const ItemDetailContainer = () => {
     const {id} = useParams();
     const [product, setProduct] = useState(null);
     const db = getFirestone();
-/*
-    const getproduct = new Promise((resolve, reject) => {
-        const selectedProduct = BeersProductList.filter(items => items.id === parseInt(id));
-        resolve(selectedProduct[0]);
-    })
 
-    const ProductCall = () => {
-        getproduct.then((rts) => setProduct(rts))
-    }
-    */
 
     useEffect(() =>  {
         db.collection("product").doc(id).get()
@@ -26,7 +17,6 @@ const ItemDetailContainer = () => {
                 setProduct({id:response.id, data:response.data()});
             }
         })
-        //ProductCall(), [])
         .catch(e => console.log(e));
     }, []);
 
@@ -49,7 +39,7 @@ const ItemDetailContainer = () => {
                 </body> :
                     <article className="loadScreen">
                         <div className="pulseDiv">
-                            <div class="loader"></div>
+                            <div className="loader"></div>
                         </div>
                     </article>
             }

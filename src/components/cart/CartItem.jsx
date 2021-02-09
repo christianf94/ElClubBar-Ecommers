@@ -19,19 +19,23 @@ const CartItem = ({key,item,id,quantity}) => {
     }
 
     return (
-        <div>
-            <div>
-                <button onClick ={() => onRemove(item.id)}>X</button>
+        <div className="cartContainer">
+            <div className="leftDiv" key={key}>
+                <div className="imgDiv">
+                    <img src={item.data.src} alt={item.data.alt} width="300px" height="220px"/>
+                </div>
             </div>
-            <div className="">
-                <img src={item.data.src} alt={item.data.alt} width="300px" height="230px"/>
+            <div className="rightDive">
+                <div className="nameDiv">
+                    <h2>{item.data.item}</h2>
+                </div>
+                <div className="infoDiv">
+                    <p>Cantidad: {item.cantidad}</p>
+                    <p>Precio por unidad:<strong>${item.data.price}</strong></p>
+                    <p>Precio total:<strong>${item.data.price * item.cantidad}</strong></p>
+                </div>
             </div>
-            <div>
-                <h2>{item.data.item}</h2>
-                <p>Cantidad: {item.cantidad}</p>
-                <p>Precio por unidad:<strong>${item.data.price}</strong></p>
-                <p>Precio total:<strong>${item.data.price * item.cantidad}</strong></p>
-            </div>
+                <button className="closeButton" onClick ={() => onRemove(item.id)}>X</button>
         </div>
         );
     }
