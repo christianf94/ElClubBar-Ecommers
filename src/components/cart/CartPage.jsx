@@ -35,24 +35,26 @@ function CartPage() {
                     <FontAwesomeIcon icon={faBoxOpen} className="icon"/>
                     <p>No Hay Productos en Lista</p>
                     </div>:
+                    
                     <div className="itemsDiv">
-                        {data.items.map(item =><li class="itemCart">
-                        <CartItem
-                        key={item.id} 
-                        item={item} 
-                        id={item.id}     
-                        quantity={item.cantidad}  
-                        />
-                        </li>)}
-                        <div className="">
-                            <p>Precio Final:${data.totalPrice}</p>
-                        </div>
-                        <div className="">
-                            <button className="" onClick={()=> resetCart()}>Vaciar Carrito</button>
-                            <button className="" onClick={()=> redirectCheckOut()} >Realizar Compra</button>
-                        </div>
+                        {data.items.map(item =>
+                        <div class="itemCart">
+                            <CartItem
+                            key={item.id} 
+                            item={item} 
+                            id={item.id}     
+                            quantity={item.cantidad}  
+                            />
+                        </div>)}
                     </div>
                 }  
+                </div>
+                <div className="totalPriceDiv">
+                            <p>Precio Final: $<strong>{data.totalPrice}</strong></p>
+                <div className="buttonsContainer">
+                    <button className="buttom" onClick={()=> resetCart()}>Vaciar Carrito</button>
+                    <button className="buttom" onClick={()=> redirectCheckOut()} >Realizar Compra</button>
+                </div>
                 </div>
             </article>
         </body>

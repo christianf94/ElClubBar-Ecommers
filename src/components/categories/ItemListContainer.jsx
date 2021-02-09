@@ -11,25 +11,7 @@ function ItemListContainer() {
     const db = getFirestone();
     const {category_name} = useParams();
 
-    /*const getProducts = () => {
-        db.collection("product").where("category", "==", "beer").get()
-        .then(docs => {
-            let arr = []
-            docs.forEach(doc => {
-                arr.push({id: doc.id, data: doc.data()})
-            })
-            setItems(arr);
-        })
-        .catch(e => console.log(e));
-    }/
-    /*const getProducts = new Promise((resolve,reject) => {
-        setTimeout(() => {
-            resolve(productBeer);
-        }, 2000) 
-    })
-*/
     useEffect(()=> {
-        console.log(category_name)
         if(category_name) {
             db.collection('product').where('category', '==', category_name).get()
             .then(response => {
@@ -41,8 +23,7 @@ function ItemListContainer() {
                 setItems(arr);
             })
         }
-        //getProducts.then(rta => setItems(rta));
-    });
+    },[category_name])
 
     return ( 
         <body className="container">
@@ -65,7 +46,7 @@ function ItemListContainer() {
                     </article> :
                     <article className="loadScreen">
                         <div className="pulseDiv">
-                        <div class="loader"></div>
+                        <div className="loader"></div>
                         </div>
                         <p> Cargando Productos...</p>
                     </article>

@@ -28,36 +28,45 @@ const WidgetCart = ({show, action}) => {
     return (
         <div className={`Cart ${show ? 'open' : 'close'}`}>
             <div className="bottonSideCart">
-                <button class="closeButton" onClick={action}> X </button>
+                <button className="closeButton" onClick={action}> X </button>
             </div>
             <div className="centerSideCart">
                 {
-                    data.totalPrice == 0 ?
+                    data.totalPrice === 0 ?
                     <div className="emptyCart">
                         <FontAwesomeIcon icon={faBoxOpen} className="iconCart"/>
                         <p className="titleDiv">No Hay Productos en Lista</p> 
                     </div>:
                     <div className="mapDiv">
-                        {data.items.map(item => <li className="titleDiv">
-                            <div className="">
-                                <img src={item.data.src} alt={item.data.alt} width="200px" height="130px"/>
+                        {data.items.map(item => 
+                        <div className="itemDiv">
+                            <div className="infoLeft">
+                                <div className="imgDiv">
+                                    <img src={item.data.src} alt={item.data.alt} width="165px" height="126px"/>
+                                </div>
                             </div>
-                            <div>
-                                <h2>{item.data.item}</h2>
-                                <p>Cantidad: {item.cantidad}</p>
-                                <p>Precio por unidad:<strong>${item.data.price}</strong></p>
-                                <p>Precio total:<strong>${item.data.price * item.cantidad}</strong></p>
+                            <div className="infoRigt">
+                                <div className="containerInfo">
+                                    <div className="titleDiv">
+                                        <h2>{item.data.item}</h2>
+                                    </div>
+                                    <div className="detailDiv">
+                                        <p>Cantidad: <strong>{item.cantidad}</strong></p>
+                                        <p>Precio por unidad: <strong>${item.data.price}</strong></p>
+                                        <p>Precio total: <strong>${item.data.price * item.cantidad}</strong></p>
+                                    </div>
+                                </div>
                             </div>
-                        </li> )}
+                        </div> )}
                     </div>
                 }
             </div>
-            <div className="">
-                            <p>Precio Final:${data.totalPrice}</p>
+            <div className="totalPriceDiv">
+                            <p>Precio Final: ${data.totalPrice}</p>
             </div>
-            <div className="">
-                    <button className="" onClick={()=> resetCart()}>Vaciar Carrito</button>
-                    <button className="" onClick={()=> redirectCart()}>Ver Carrito</button>
+            <div className="buttonsContainer">
+                    <button className="button" onClick={()=> redirectCart()}>Ver Carrito</button>
+                    <button className="button" onClick={()=> resetCart()}>Vaciar Carrito</button>
             </div>
         </div>
     )

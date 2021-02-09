@@ -28,8 +28,6 @@ function Navbar() {
                         <NavItem text="BEERS" to={`/category/beers`}/>
                         <NavItem text="CLOTHES" to={`/category/clothes`}/>
                         <NavItem text="GEAR" to={`/category/gear`}/>
-                        <NavItem text="USER" to={`/user`}/>
-                        <NavItem text="CONTACT" to={`/contact`}/>
                     </div>
                 </div>
                 <div className="rightSide">

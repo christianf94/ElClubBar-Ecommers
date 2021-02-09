@@ -1,18 +1,12 @@
 import "../../styles/ItemDetail.css"
 import ItemCount from "../global/ItemCount"
-import {useEffect} from "react";
 
 const ItemDetail = ({item,id, src,name,detail,price,stock,alt}) => {
 
-    const ProductCall = () => {
-    console.log(item)
-    }
-
-    useEffect(() =>  {ProductCall()},[])
     return(
         <>
         <article className="container">
-            <div className="detailDiv"> 
+            <div className="detailDiv" key={id}> 
                 <div className="imageDiv">
                     <img src={src} alt={alt} className="itemImg"></img>
                 </div>

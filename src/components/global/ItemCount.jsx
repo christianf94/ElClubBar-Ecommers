@@ -41,8 +41,7 @@ function ItemCount({stock, product}) {
         }
         
         setTimeout(() => {
-            alert(`Haz agregado ${count} items al carrito`)
-            history.push("/");
+            history.push("/cart");
         }, 1000) 
     }
     return (
