@@ -49,11 +49,13 @@ function CartPage() {
                     </div>
                 }  
                 </div>
-                <div className="totalPriceDiv">
-                            <p>Precio Final: $<strong>{data.totalPrice}</strong></p>
-                <div className="buttonsContainer">
-                    <button className="buttom" onClick={()=> resetCart()}>Vaciar Carrito</button>
-                    <button className="buttom" onClick={()=> redirectCheckOut()} >Realizar Compra</button>
+                <div className="priceBar{">
+                    <div className="totalPriceDiv">
+                        <p>Precio Final: $<strong>{data.totalPrice}</strong></p>
+                        <div className="buttonsContainer">
+                            <button className="buttom" onClick={()=> resetCart()}>Vaciar Carrito</button>
+                            <button className={!data.totalPrice ? "buttomOff": "buttom"} disabled={!data.totalPrice ? "disabled" : null } onClick={()=> redirectCheckOut()} >Realizar Compra</button>
+                        </div>
                 </div>
                 </div>
             </article>

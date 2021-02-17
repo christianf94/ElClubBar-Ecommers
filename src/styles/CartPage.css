@@ -19,14 +19,21 @@
     border-style: solid;
     border-color: solid 2px rgba(0, 0, 0, 0.658);}
 
-.cart .divCart .listCart{
-}
-
 .cart .divCart .listCart .itemsDiv{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    flex-flow: wrap; 
 }
+
+.cart .divCart .listCart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .cart .divCart .totalPriceDiv{
     font-size: 4rem;
@@ -51,6 +58,17 @@
 
 .cart .divCart .buttonsContainer .buttom{
     background-color: var(--color-principal);
+    font-family: "Teko", sans-serif;
+    color:white;
+    font-size:1.8rem ;
+    border-radius:8px;
+    border-width: 1px;
+    width: 30%;
+    margin:7px;
+}
+
+.cart .divCart .buttonsContainer  .buttomOff{
+    background-color: grey;
     font-family: "Teko", sans-serif;
     color:white;
     font-size:1.8rem ;
