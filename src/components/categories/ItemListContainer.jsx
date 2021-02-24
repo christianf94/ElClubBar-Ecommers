@@ -19,9 +19,10 @@ function ItemListContainer() {
                 response.forEach(doc => {
                     arr.push({id: doc.id, data: doc.data()})
                 })
-
                 setItems(arr);
+                
             })
+            .catch(e => console.log(e));
         }
     },[category_name])
 
@@ -33,15 +34,16 @@ function ItemListContainer() {
                     <article className="divItems">
                         {
                             item.map(item => (
+                                <div  key={item.id}>
                                 <ItemCard 
                                     id={item.id}
                                     src={item.data.src} 
                                     alt={item.data.alt} 
                                     item={item.data.item} 
                                     price={item.data.price} 
-                                    stocks={item.data.stocks}
-                                    
-                                /> ))
+                                    stocks={item.data.stocks}  
+                                /> 
+                                </div>))
                         }
                     </article> :
                     <article className="loadScreen">

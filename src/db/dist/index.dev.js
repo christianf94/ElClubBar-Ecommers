@@ -13,7 +13,7 @@ require("@firebase/firestore");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var app = _app["default"].initializeApp({
-  apiKey: "AIzaSyAtStKqORf3kkAfSe0GE_oXa2TEXuW7LEQ",
+  apiKey: process.env.API_KEY,
   authDomain: "el-club-bar.firebaseapp.com",
   projectId: "el-club-bar",
   storageBucket: "el-club-bar.appspot.com",

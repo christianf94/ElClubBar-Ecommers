@@ -31,14 +31,14 @@ function CartPage() {
                 <div className="listCart">
                 {
                     data.totalPrice === 0 ?
-                    <div className="title">
+                    <div className="title" >
                     <FontAwesomeIcon icon={faBoxOpen} className="icon"/>
                     <p>No Hay Productos en Lista</p>
                     </div>:
                     
                     <div className="itemsDiv">
                         {data.items.map(item =>
-                        <div class="itemCart">
+                        <div class="itemCart" key={item.id}>
                             <CartItem
                             key={item.id} 
                             item={item} 
