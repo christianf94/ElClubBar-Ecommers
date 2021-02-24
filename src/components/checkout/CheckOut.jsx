@@ -138,7 +138,7 @@ const CheckOut = () => {
             <div>
                 <div className="imputGroup">
                     <input type="text" className={lastName.check === "false" ? "imputError": "imputClass" || lastName.check === "true" ? "imputClass": "imputError" ||  lastName.check === "null" ? "imputError": "imputClass"} value={lastName.value} onChange={handleChangeLastName} name="lastName" placeholder="Last Name" onKeyUp={validationLastName} onBlur={validationLastName} required  />  
-                    <FontAwesomeIcon icon={faExclamationCircle}className={lastName.check === "false" ? "iconError": "icon" || lastName.check === "true" ? "icon": "iconError" ||  lastName.check === "null" ? "iconError": "icon"}/>
+                    <FontAwesomeIcon icon={faExclamationCircle} className={lastName.check === "false" ? "iconError": "icon" || lastName.check === "true" ? "icon": "iconError" ||  lastName.check === "null" ? "iconError": "icon"}/>
                 </div>
                     <p className="errorMsj">APELLIDO</p> 
             </div>
@@ -146,7 +146,7 @@ const CheckOut = () => {
             <div>
                 <div className="imputGroup"> 
                     <input type="email" className={email.check === "false" ? "imputError": "imputClass" || email.check === "true" ? "imputClass": "imputError" ||  email.check === "null" ? "imputError": "imputClass"} value={email.value} onChange={handleChangeEmail} onKeyUp={validationEmail} onBlur={validationEmail}  name="email" placeholder="E-mail" required />
-                    <FontAwesomeIcon icon={faExclamationCircle } className="icon"/>
+                    <FontAwesomeIcon icon={faExclamationCircle } className={email.check === "false" ? "iconError": "icon" || email.check === "true" ? "icon": "iconError" ||  email.check === "null" ? "iconError": "icon"}/>
                 </div>
                     <p className="errorMsj">EMAIL</p>
             </div>
@@ -154,7 +154,7 @@ const CheckOut = () => {
             <div>
                 <div className="imputGroup">
                     <input type="tel" className={tel.check === "false" ? "imputError": "imputClass" || tel.check === "true" ? "imputClass": "imputError" ||  tel.check === "null" ? "imputError": "imputClass"} value={tel.value} onChange={handleChangeTlf} onKeyUp={validationTel} onBlur={validationTel}name="tel" placeholder="Telephone" required />
-                    <FontAwesomeIcon icon={faExclamationCircle } className="icon"/>
+                    <FontAwesomeIcon icon={faExclamationCircle }  className={tel.check=== "false" ? "iconError": "icon" || tel.check === "true" ? "icon": "iconError" ||  tel.check === "null" ? "iconError": "icon"}/>
                 </div>
                     <p className="errorMsj">TLF</p>
             </div>
