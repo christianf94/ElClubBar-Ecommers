@@ -19,7 +19,7 @@ function Navbar() {
             <nav className="navBar">
                 <div className="leftSide">
                     <div className="navLogo">
-                        <a  href="https://el-club-bar--homepage.web.app"><h1 className ="logoText">El Club Bar</h1></a>
+                        <a href="https://el-club-bar--homepage.web.app"><h1 className ="logoText">El Club Bar</h1></a>
                     </div>
                 </div>
                 <div className="centerSide">
