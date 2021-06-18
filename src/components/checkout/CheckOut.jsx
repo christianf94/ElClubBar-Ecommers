@@ -72,8 +72,8 @@ const CheckOut = () => {
     }
 
     const regularExpresion = {
-	name: /^[a-zA-ZÀ-ÿ\s]{4,40}$/,
-	lastName: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
+	name: /^[aA-zA-ZÀ-ÿ\s]{4,40}$/,
+	lastName: /^[aA-zA-ZÀ-ÿ\s]{1,40}$/,
 	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	tel: /^\d{7,14}$/, // 7 a 14 numeros.
     }
@@ -129,7 +129,7 @@ const CheckOut = () => {
         <form onSubmit={handleSubmitForm}>
             <div>
                 <div className="imputGroup">
-                    <input type="text" className={name.check === "false" ? "imputError": "imputClass" || name.check === "true" ? "imputClass": "imputError" ||  name.check === "null" ? "imputError": "imputClass"} maxlength="15" value={name.value} onChange={handleChangeName} onKeyUp={validationName} onBlur={validationName} name="name" placeholder="Name"  pattern="[a-zA-Z]" required />
+                    <input type="text" className={name.check === "false" ? "imputError": "imputClass" || name.check === "true" ? "imputClass": "imputError" ||  name.check === "null" ? "imputError": "imputClass"} maxlength="15" value={name.value} onChange={handleChangeName} onKeyUp={validationName} onBlur={validationName} name="name" placeholder="Name"  pattern="[aA-zA-Z]" required />
                     <FontAwesomeIcon icon={faExclamationCircle} className={name.check === "false" ? "iconError": "icon" || name.check === "true" ? "icon": "iconError" ||  name.check === "null" ? "iconError": "icon"} />
                 </div>
                     <p className="errorMsj">NOMBRE</p>
